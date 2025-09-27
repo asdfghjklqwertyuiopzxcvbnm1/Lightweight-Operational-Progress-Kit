@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lightweight-operational-progress-kit"
+version = "1.0.0"
+description = "A lightweight toolkit for operational progress tracking and visualization"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "l-love-china", email = "your-email@example.com"},
+]
+keywords = ["progress", "tracking", "operations", "lightweight", "visualization", "monitoring"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Monitoring",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/l-love-china/Lightweight-Operational-Progress-Kit"
+Documentation = "https://github.com/l-love-china/Lightweight-Operational-Progress-Kit#readme"
+Repository = "https://github.com/l-love-china/Lightweight-Operational-Progress-Kit"
+Issues = "https://github.com/l-love-china/Lightweight-Operational-Progress-Kit/issues"
+"Source Code" = "https://github.com/l-love-china/Lightweight-Operational-Progress-Kit/blob/main/LOPK1_0/LOPK1_0.py"
+
+[tool.setuptools.packages.find]
+where = ["LOPK1_0"]  # 指定包所在的目录
+include = ["LOPK1_0"]  # 包含的包名
+
+# 如果你的 LOPK1_0.py 文件中有 main 函数，可以配置命令行工具
+[project.scripts]
+lopk = "LOPK1_0:main"  # 模块名:函数名
+
+# 如果你的文件中有其他入口函数，也可以配置多个命令
+# lopk-track = "LOPK1_0:track_progress"
+# lopk-monitor = "LOPK1_0:monitor_operations"
+
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md", "*.rst", "*.py"]
