@@ -3,9 +3,9 @@ import os
 import sys
 import time
 
-print("由githubasdfghjklqwertyuiopzxcvbnm1制作")
+print("由I-love-china制作")
 """
-由githubasdfghjklqwertyuiopzxcvbnm1制作
+由I-love-china制作
 2025/89/19
 """
 
@@ -58,4 +58,5 @@ def cls():
     if os.name == "nt":
         os.system("cls")
     else:
+
         os.system("clear")
